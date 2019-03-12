@@ -1,0 +1,25 @@
+<% include ./partials/header.ejs %>
+
+
+<div class="jumbotron">
+  <h1 class="display-4">THIS IS THE BLOG PAGE</h1>
+</div>
+
+<div class="container" >
+  <% blogs.forEach((blog)=>{ %>
+    <div class="eachBlog" style="margin: 15px 0;">
+      <h3><%= blog.title %></h3>
+      <img src="<%= blog.image %>" alt="">
+      <div class="blogContent">
+        <p><%= blog.post %></p>
+      </div>
+      <p><%= blog.author %></p>
+      <span><%= blog.date %></span>
+    </div>
+    <hr>
+
+  <% }) %>
+</div>
+
+
+<% include ./partials/footer.ejs %>

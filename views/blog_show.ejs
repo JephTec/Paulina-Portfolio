@@ -1,0 +1,28 @@
+<% include ./partials/header.ejs %>
+<div class="blog_container .dark_bg">
+  <div className="row">
+    <div id="show_title" className="mt-3 col-10">
+    <%=blog.title%>
+    </div>
+  </div>
+
+  <div className="row" id="dark_bg">
+    <div className="col-md-6 my-3 text-capitalize">
+      <img class="blog_img" src="<%= blog.image %>" alt="blog image">
+    </div>
+    <div className="col-md-6 my-3 text-capitalize">
+      <div class="date">
+        <span > <p class="ml-2 text-muted"><%= blog.created.toDateString() %></p> </span>
+      </div>
+      <div class="body_content">
+        <p><%- blog.body %></p>
+      </div>
+      <a href="/blog" class="btn btn-outline-secondary text-center d-flex align-item-end">Go back</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<% include ./partials/footer.ejs %>

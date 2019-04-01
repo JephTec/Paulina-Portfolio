@@ -1,0 +1,36 @@
+<% include ./partials/header.ejs %>
+<div class="new_blog">
+  <div class="container dark_bg">
+    <div class="row">
+      <div class="col-sm-12">
+        <form action="/blog" method="post">
+          <div class="form-group">
+            <label class="display-2 mt-5">Create a New Post</label>
+          </div>
+          <div class="form-group">
+            <label class="my-2">Title:</label>
+            <input class="form-control" type="text" name="blog[title]" placeholder="title" required>
+          </div>
+          <div class="form-group">
+            <label class="my-2">Description:</label>
+            <input class="form-control" type="text" name="blog[description]" placeholder="description" required>
+          </div>
+          <div class="form-group">
+            <label class="my-2" for="image">Image:</label>
+            <input class="form-control" id="image" type="text" name="blog[image]" placeholder="image" required>
+          </div>
+          <div class="form-group">
+            <label class="my-2" for="content">Body Content:</label>
+            <textarea class="form-control" id="content" name="blog[body]" required></textarea>
+          </div>
+          <input class="btn btn-outline-secondary mb-2" type="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<% include ./partials/footer.ejs %>

@@ -3,23 +3,32 @@
 
 <div class="jumbotron">
   <h1 class="display-4">THIS IS THE BLOG PAGE</h1>
+  <a href="/blog/new" class="btn btn-outline-secondary">New Post</a>
 </div>
 
-<div class="container" >
-  <% blogs.forEach((blog)=>{ %>
-    <div class="eachBlog" style="margin: 15px 0;">
-      <h3><%= blog.title %></h3>
-      <img src="<%= blog.image %>" alt="">
-      <div class="blogContent">
-        <p><%= blog.post %></p>
+<div class="container">
+  <div class="row">
+    <% blogs.forEach((blog)=>{ %>
+    <div class="col-md-3 col-sm-6">
+      <div class="card">
+         <img class="card-img-top" src="<%= blog.image %>" alt="Card image cap">
+          <div class="card-body">
+             <h5 class="card-title"><%= blog.title %></h5>
+             <p class="my-3"><%= blog.description %></p>
+             <span ><%= blog.created.toDateString() %></span>
+             <p class="card-text">
+               <%= blog.post %>
+             </p>
+             <a href="/blog/<%= blog._id %>" class="btn btn-outline-secondary my-2">Read More</a>
+          </div>
+
       </div>
-      <p><%= blog.author %></p>
-      <span><%= blog.date %></span>
     </div>
-    <hr>
-
-  <% }) %>
+    <% }) %>
+  </div>
 </div>
+
+
 
 
 <% include ./partials/footer.ejs %>

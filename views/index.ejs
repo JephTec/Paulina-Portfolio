@@ -11,120 +11,56 @@
       <section class="wrapper">
         <div class="row justify-content-around">
           <div class="col-11 col-md-4 col-lg-5 index-links">
-            <button id="portfolio" class="btn btn-outline text-center">Portfolio</button>
+            <button id="portfolio" class="box btn btn-outline text-center">Portfolio</button>
           </div>
           <div class="col-11 col-md-3  index-links">
-            <button id="blog" class="btn btn-outline">Blog</button>
+            <button id="blog" class="box btn btn-outline">Blog</button>
           </div>
           <div class="col-11 col-md-3  index-links">
-            <button class="btn btn-outline">Products</button>
+            <button id="products"class="box btn btn-outline">Products</button>
           </div>
 
 
-<!-- PORTFOLIO -->
+      <!-- Portfolio Start -->
+          <% include ./main_partials/portfolio.ejs %>
+      <!-- Portfolio End -->
 
-          <div class="col-12">
-            <div id="showcase" class="showPortfolio display-bg display d-none">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/eIhH7RTlTZA)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/3dUpL1h97CQ)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/p-1-VJjU-88)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/Nvh1YQSmgkM)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/fT49QnFucQ8)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/QlBdxJK2-nU)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/t2Sai-AqIpI)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/O6fs4ablxw8)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/QwoNAhbmLLo)"></div>
-                  <div class="swiper-slide" style="background-image:url(https://source.unsplash.com/FqnkBeq1wGg)"></div>
-                  
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-            </div>
-          </div>
-          <script src="/js/swiper/swiper.min.js"></script>
-          <script>
-            var swiper = new Swiper('.swiper-container', {
-              effect: 'flip',
-              grabCursor: true,
-              pagination: {
-                el: '.swiper-pagination',
-              },
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-            });
-          </script>
+      <!-- Blog Start -->
+          <% include ./main_partials/blog.ejs %>
+      <!-- Blog End -->
 
-<!-- BLOG -->
-          <div class="col-12">
-            <div id="showcase" class="showblog display d-none">
-              <div class="blog">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="blog-title">
-                      <h1>This is the blog title</h1>
-                    </div>
-                    <span class="text-muted">April 20th 2019</span>
-                    <hr />
-                    <div class="blog-content">
-                      <p><span>Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p>
-                      <p>in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="blog-image">
-                      <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/fa/e15e80504811e6bcaf7158d37ab7ca/LightBulb.jpg?auto=format%2Ccompress&dpr=2.625" alt="">
-                    </div>
-                    <a href="/blog" class="btn btn-outline-secondary">View All Blogs</a>
-                  </div>
-                </div>
-                <!-- <a href="/blog" class="btn btn-outline-secondary btn-lg m-4">Blog page</a> -->
-              </div>
+      <!-- Products Start -->
+          <% include ./main_partials/products.ejs %>
+      <!-- Products End -->
 
-            </div>
-          </div>
-<!-- End Blog -->
+      <!-- Contact Start -->
+          <% include ./main_partials/contact.ejs %>
+      <!-- Contact End -->
+
+      <!-- Side Project Start -->
+          <% include ./main_partials/side_projects.ejs %>
+      <!-- Side Project End -->
+
+      <!-- About Me Start -->
+          <% include ./main_partials/about_me.ejs %>
+      <!-- About Me End -->
+
+
 
 <!-- Index Buttons -->
           <div class="col-11 col-md-3   index-links">
-            <button class="btn btn-outline">Contact</button>
+            <button id="contact" class="box btn btn-outline">Contact</button>
           </div>
           <div class="col-11 col-md-4 col-lg-5  index-links">
-            <button class="btn btn-outline">Side Projects</button>
+            <button id="side-projects" class="box btn btn-outline">Side Projects</button>
           </div>
 
           <div class="col-11 col-md-3   index-links">
-            <button class="btn btn-outline">About me</button>
+            <button id="about-me" class="box btn btn-outline">About me</button>
           </div>
         </div>
       </section>
     </main>
 
-      <footer id="padding" class="wrapper">
-    		<ul class="footer-links-cases">
-    			<li><span class="p">Get in Touch</span></li>
-    			<li>323 E Hammer Ln.</li>
-    			<li>Stockton, Ca 95207</li>
-    			<li>209.688.1756</li>
-    			<li>paulina@gmail.com</li>
-    		</ul>
-        <div class="footer-sm">
-          <a href="#">
-            <img src="img/facebook2.png" alt="facebook">
-          </a>
-          <a href="#">
-            <img src="img/instagram2.png" alt="instagram">
-          </a>
-          <a href="#">
-            <img src="img/youtube3.png" alt="youtube">
-          </a>
-        </div>
-  	</footer>
+    
 <% include ./partials/footer.ejs %>

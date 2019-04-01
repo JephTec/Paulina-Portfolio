@@ -1,0 +1,38 @@
+<div class="col-12">
+  <div id="show-portfolio" class="display-bg d-none">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/6739/art-graffiti-abstract-vintage.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/1532704/pexels-photo-1532704.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/1657784/pexels-photo-1657784.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/935785/pexels-photo-935785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/1151261/pexels-photo-1151261.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/1292241/pexels-photo-1292241.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/1149019/pexels-photo-1149019.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/1191668/pexels-photo-1191668.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+        <div class="swiper-slide" style="background-image:url(https://images.pexels.com/photos/1277201/pexels-photo-1277201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)"></div>
+
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>
+<script src="/js/swiper/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'flip',
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>

@@ -1,0 +1,45 @@
+#show_title{
+   color: white;
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+}
+
+.new_blog{
+  color: white;
+  margin: 0 auto;
+}
+
+
+label{
+  font-size: 1.5rem;
+  margin-bottom: .2rem;
+}
+
+#dark_bg {
+  background-color: rgba(0,0,0,0.75);
+}
+
+.body_content{
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.blog_img{
+  width: 100%;
+}
+
+@media (min-width: 576px){
+  .blog_container {
+    max-width: 540px;
+  }
+}
+
+
+/* .blog_img {
+  width: 100%;
+  margin: 0 auto;
+} */
